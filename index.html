@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Veterinarian</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.search{
+			font-size:20px;
+			color: white;
+		}
+		header{
+			background-color: #d9ab00;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 11px 0px;
+		}
+		body{
+			margin: 0;
+			font-family: 'Poppins', sans-serif;
+		}
+		header .logo{
+			width: 13%;
+		}
+		img{
+			width: 100%;
+		}
+		.list1a{
+			list-style: none;
+			display: flex;
+			width: 350px;
+			justify-content: space-around;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		header .busc{
+			display: flex;
+			align-items: center;
+			-webkit-box-shadow: -1px 11px 33px 5px rgba(0,0,0,0.32);
+			-moz-box-shadow: -1px 11px 33px 5px rgba(0,0,0,0.32);
+			box-shadow: -1px 11px 33px 5px rgba(0,0,0,0.32);
+		}
+		header input{
+			height: 30px;
+			border: none;
+			background-color: #fbc301;
+
+		}
+		.busc .lupa{
+			background-color: #00bdc9;
+			padding: 4px 17px;
+		}
+		header input::placeholder{
+			color: white;
+		}
+
+		.section1{
+			background-color: #fbc302;
+		}
+
+		.section3{
+			background-color: #fbc302;
+			padding-bottom: 4%;
+		}
+
+
+		.section4{
+			display: flex;
+		    align-items: center;
+		    height: 90%;
+		    justify-content: space-evenly;
+		    flex-wrap: nowrap;
+		    padding: 30px 0;
+		}
+
+		.section6{
+			padding-bottom: 2%;
+		}
+
+		.section7{
+			background-image: url(imagenes/section7.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			padding: 7% 0 7% 0;
+		}
+
+		.section9{
+			background-color: #333333;
+			display: flex;
+			justify-content: space-evenly;
+			gap: 182px;
+			color: white;
+			padding: 58px 118px;
+		}
+
+		img{
+			width: 100%;
+		}
+
+		.divsec1{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			padding-top: 5%;
+			padding-bottom: 2%;
+		}
+
+		.divsec2{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 5% 0 3% 0;
+		}
+
+		.divsec7{
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.play2{
+			width: 40%;
+			text-align: center;
+		}
+
+		.txts2{
+			width: 27%;
+			padding-left: 6%;
+		}
+
+		.txts4{
+			text-align: end;
+			width: 30%;
+			display: flex;
+		    align-items: flex-end;
+		    justify-content: center;
+		    flex-direction: column;
+		}
+
+		.butsec1{
+			display: flex;
+			gap: 5%;
+		}
+
+		.butsec2{
+			width: 24%;
+			background-color: #fbc301;
+			text-align: center;
+			padding: 15px 20px;
+			color: white;
+			border-radius: 5px;
+		}
+
+		.butsec4{
+			background-color: #fbc301;
+		    text-align: center;
+		    padding: 15px 20px;
+		    color: white;
+		    border-radius: 5px;
+		}
+
+		.butsec5{
+			background-color: #00bdc9;
+			border-radius: 28px;
+			padding: 8px 25px;
+			width: 25%;
+		}
+
+		.section8{
+			
+		}
+
+		img{
+			max-width: 100%;
+		}
+
+		.title3{
+			text-align: center;
+			padding: 17px 415px;
+			color: white;
+		}
+
+		.title8{
+			text-align: center;
+			padding: 17px 415px;
+		}
+
+		.imgtxt3{
+			display: flex;
+			justify-content: center;
+		}
+
+		.imgtxt7{
+			text-align: center;
+			color: white;
+		}
+
+		.imgtxt8{
+			display: flex;
+			justify-content: center;
+		}
+
+		.imagesec1{
+			width: 50%;
+		}
+
+		.imagesec1 img{
+			max-width: 74%;
+		}
+
+		.butsec1-1{
+			background-color: #00bdc9;
+			border-radius: 5px;
+			padding: 0 25px;
+		}
+
+		.butsec1-2{
+			border-radius: 5px;
+			border: 1px solid white;
+			padding: 0 25px;
+		}
+
+		.butsec5-1{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.imagesec8-3{
+			width: 24%;
+		}
+
+		h3{
+			font-size: 25px;
+		}
+
+		h1{
+			font-size: 45px;
+			margin: 0;
+		}
+
+		h4{
+			color: #00bec9;
+		}
+
+		.h2{
+			font-size: 25px;
+			margin-top: -18px;
+			padding: 0 0 29px 0;
+		}
+
+		.txtsec1{
+			width: 62%;
+			padding-left: 8%;
+			color: white;
+		}
+
+		.txtsec1 h1{
+			font-size: 59px;
+		}
+
+		.txtsec1 h3{
+			font-size: 21px;
+			font-style: normal;
+			padding-bottom: 3%;
+		}
+
+		.txtsec3{
+			color: white;
+			text-align: center;
+		}
+
+		.txtsec5{
+			color: white;
+			text-align: center;
+		}
+
+		.txtsec6{
+			padding: 0 43px;
+			text-align: center;
+		}
+
+		.txtsec6 img{
+			width: 75%;
+		}
+
+		.txtsec8{
+			padding: 0 43px;
+		}
+
+		#dos{
+			padding: 0 50px;
+		}
+
+		.textsec9{
+			display: flex;
+    		justify-content: space-evenly;
+		}
+		.list9a, .list9b{
+			list-style: none;
+		}
+
+		.textsec3-9{
+			text-align: end;
+		}
+
+		.img-enviar{
+			width: 57%;
+		}
+
+		.redes2{
+			width: 34%;
+		}
+	</style>
+</head>
+<body>
+	<!-- <i class="fa-solid fa-magnifying-glass search"></i> -->
+
+	<header>
+		<div class="logo">
+			<img src="imagenes/logo.png">
+		</div>
+		<nav>
+			<ul class="list1a">
+				<a href=""><li>Home</li></a>
+				<a href=""><li>About</li></a>
+				<a href=""><li>Service</li></a>
+				<a href=""><li>Contact</li></a>	
+			</ul>
+		</nav>
+
+		<div class="busc">
+			<input type="text" name="" placeholder="Buscar..">
+			<div class="lupa"><i class="fa-solid fa-magnifying-glass search"></i></div>
+		</div>
+	</header>
+
+	<section class="section1">
+		<div class="divsec1">
+			<div class="txtsec1">
+				<div>
+					<h1>First I wanted to be
+a veterinarian</h1>
+					<h3>Lorem Ipsum available but the majority have
+suffered alteration in some form, by injected
+humour randomised words.</h3>
+				</div>
+				<div class="butsec1">
+					<div class="butsec1-1"><a href="#"><p>Contact Us</p></a></div>
+					<div class="butsec1-2"><a href="#"><p>Our Service</p></a></div>
+				</div>
+			</div>
+			<div class="imagesec1">
+				<img src="imagenes/dog.png">
+			</div> 
+		</div>
+	</section>
+
+	<section class="section2">
+		<div class="divsec2">
+			<div class="txts2">
+				<div class="textsec2">
+					<p><h1>As a veterinarian and lover of animals</h1></p>
+					<p>Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words</p>
+				</div>
+				<a href="#"><div class="butsec2">
+					Our Service
+				</div></a>
+			</div>
+			<div class="play1">
+				<img src="imagenes/play1.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="section3">
+	<div class="title3">
+		<h1>Title Here</h1>
+		<p class="h2"> Lorem Ipsum available, but the majority have
+ suffered alteration in some form.</p>
+	</div>
+	<div class="imgtxt3">
+		<div class="imagesec8-3" id="uno">
+			<div class="imagesec3"><img src="imagenes/collage1-01.png"></div>
+			<div class="txtsec3">
+				<h3>Veterinarian</h3>
+				<h5>Lorem Ipsum available, but the majo
+rity have suffered alteration in some
+words which look.</h5>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="dos">
+			<div class="imagesec3"><img src="imagenes/collage1-02.png"></div>
+			<div class="txtsec3">
+				<h3>Vaccination Care</h3>
+				<h5>Lorem Ipsum available, but the majo
+rity have suffered alteration in some
+words which look.</h5>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="tres">
+			<div class="imagesec3"><img src="imagenes/collage1-03.png"></div>
+			<div class="txtsec3">
+				<h3>Dental Care</h3>
+				<h5>Lorem Ipsum available, but the majo
+rity have suffered alteration in some
+words which look.</h5>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="section4">
+			<div class="play2">
+				<img src="imagenes/play2.png">
+			</div>
+			<div class="txts4">
+				<div class="textsec4">
+					<p><h1>As a veterinarian and lover of animals</h1></p>
+					<p>Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words</p>
+				</div>
+				<a href="#"><div class="butsec4">
+					Our Service
+				</div></a>
+			</div>
+	</section>
+
+	<section class="section5">
+	<div class="section3">
+	<div class="title3">
+		<h1>Title Here</h1>
+		<p class="h2"> Lorem Ipsum available, but the majority have
+ suffered alteration in some form.</p>
+	</div>
+	<div class="imgtxt3">
+		<div class="imagesec8-3" id="uno">
+			<div class="imagesec3"><img src="imagenes/collage2-01.png"></div>
+			<div class="txtsec3">
+				<h3><span style="text-decoration:line-through;">
+    $50
+</span>$30</h3>
+				<div class="butsec5-1">
+				<div class="butsec5">Buy Now</div>
+				</div>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="dos">
+			<div class="imagesec3"><img src="imagenes/collage2-02.png"></div>
+			<div class="txtsec3">
+				<h3><span style="text-decoration:line-through;">
+    $40
+</span>$25</h3>
+				<div class="butsec5-1">
+				<div class="butsec5">Buy Now</div>
+				</div>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="tres">
+			<div class="imagesec3"><img src="imagenes/collage2-03.png"></div>
+			<div class="txtsec3">
+				<h3><span style="text-decoration:line-through;">
+    $45
+</span>$20</h3>
+				<div class="butsec5-1">
+				<div class="butsec5">Buy Now</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+	<section class="section6">
+	<div class="title8">
+		<h1>The vetcare team</h1>
+		<p class="h2"> Lorem Ipsum available, but the majority have
+ suffered alteration in some form.</p>
+	</div>
+	<div class="imgtxt8">
+		<div class="imagesec8-3" id="uno">
+			<div class="imagesec8"><img src="imagenes/collage3-01.png"></div>
+			<div class="txtsec6">
+				<h3>Jennifer Mullen</h3>
+				<h5>VETERINARY</h5>
+				<a href="#"> <img src="imagenes/redes.png"> </a>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="dos">
+			<div class="imagesec8"><img src="imagenes/collage3-02.png"></div>
+			<div class="txtsec6">
+				<h3>Sheeren Collins</h3>
+				<h5>ADMINISTRATION</h5>
+				<a href="#"> <img src="imagenes/redes.png"> </a>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="tres">
+			<div class="imagesec8"><img src="imagenes/collage3-03.png"></div>
+			<div class="txtsec6">
+				<h3>Jennifer Mullen</h3>
+				<h5>VETERINARY</h5>
+				<a href="#"> <img src="imagenes/redes.png"> </a>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="section7">
+		<div class="divsec7">
+			<div class="imgtxt7">
+				<div><img src="imagenes/icon1.png"></div>
+				<div><h2>+34793</h2></div>
+				<div><h2>Happy Clients</h2></div>
+			</div>
+			<div class="imgtxt7">
+				<div><img src="imagenes/icon2.png"></div>
+				<div><h2>+45382</h2></div>
+				<div><h2>Departament</h2></div>
+			</div>
+			<div class="imgtxt7">
+				<div><img src="imagenes/icon3.png"></div>
+				<div><h2>+54762</h2></div>
+				<div><h2>Vaccinations</h2></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section8">
+	<div class="title8">
+		<h1>Recent Posts</h1>
+		<p class="h2"> Lorem Ipsum available, but the majority have
+ suffered alteration in some form.</p>
+	</div>
+	<div class="imgtxt8">
+		<div class="imagesec8-3" id="uno">
+			<div class="imagesec8"><img src="imagenes/collage4-01.png"></div>
+			<div class="txtsec8">
+				<h3>As a veterinarian and
+lover of animals</h3>
+				<h4>FEBRUARY 09, 2020</h4>
+				<h5>Lorem Ipsum available, but the majo
+rity have suffered alteration in some
+words which look.</h5>
+				<a href="#"><h4>Read More+</h4></a>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="dos">
+			<div class="imagesec8"><img src="imagenes/collage4-02.png"></div>
+			<div class="txtsec8">
+				<h3>As a veterinarian and
+lover of animals</h3>
+				<h4>FEBRUARY 10, 2020</h4>
+				<h5>Lorem Ipsum available, but the majo
+rity have suffered alteration in some
+words which look.</h5>
+				<a href="#"><h4>Read More+</h4></a>
+			</div>
+		</div>
+		<div class="imagesec8-3" id="tres">
+			<div class="imagesec8"><img src="imagenes/collage4-03.png"></div>
+			<div class="txtsec8">
+				<h3>As a veterinarian and
+lover of animals</h3>
+				<h4>FEBRUARY 11, 2020</h4>
+				<h5>Lorem Ipsum available, but the majo
+rity have suffered alteration in some
+words which look.</h5>
+				<a href="#"><h4>Read More+</h4></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section9">
+          <div class="textsec9">
+            <div class="textsec1-9">
+              <ul class="list9a">
+              	<li><h3>About</h3></li>
+                <li>History</li>
+                <li>Our team</li>
+                <li>Brand Guidelines</li>
+                <li>Terms y conditions</li>
+                <li>Privacy y policy</li>
+              </ul>
+            </div>
+            <div class="textsec2-9">
+              <ul class="list9b">
+              	<li><h3>Service</h3></li>
+                <li>How to Order</li>
+                <li>Our Product</li>
+                <li>Order status</li>
+                <li>Promo</li>
+                <li>Payment Method</li>
+              </ul>
+            </div>
+          </div>
+          <div class="textsec3-9">
+            <div class="title9">
+              <h3>Title Here</h3>
+            </div>
+            
+            <div class="parrafo9">
+              <p>Lorem Ipsum available, but the majorit</p>
+            </div>
+            <div>
+              <img src="imagenes/enviar.png" alt="" class="img-enviar">
+            </div>
+            <div>
+              <img src="imagenes/redes2.png" alt="" class="redes2">
+            </div>
+          </div>
+</section>
+
+
+<script src="https://kit.fontawesome.com/20eb9de2ea.js" crossorigin="anonymous"></script>
+</body>
+</html>
